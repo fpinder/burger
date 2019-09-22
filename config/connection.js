@@ -2,13 +2,21 @@
 var mysql = require("mysql");
 require("dotenv").config();
 
-var connection = mysql.createConnection({
-    host: process.env.HOST,
-    port: process.env.PORT,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE
-});
+//To hookup my project with heroku JawsDB
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+
+    var connection = mysql.createConnection({
+        host: process.env.HOST,
+        port: process.env.PORT,
+        user: process.env.USER,
+        password: process.env.PASSWORD,
+        database: process.env.DATABASE
+    });
+
+}
+
 // Make connection.
 connection.connect(function (err) {
     if (err) {
