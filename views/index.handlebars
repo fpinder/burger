@@ -13,8 +13,8 @@
 
         <div class="row">
             <div class="col-sm-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading" id="leftside"><strong>Ready to Devour</strong>
+                <div class="panel panel-default" id="leftside">
+                    <div class="panel-heading"><strong>Ready to Devour</strong>
                         <p>Click button to Devour </p>
                     </div>
                     <div class="panel-body">
@@ -24,7 +24,7 @@
 
                             <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
                             <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
-                                data-newDevoured="{{devour}}"><span class="fa fa-usd"></span></button>
+                                data-newDevoured="{{devour}}"><span class="fas fa-hamburger"></span></button>
                             <hr>
                             {{/unless}}
                             {{/each}}
@@ -34,8 +34,8 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading" id="center"><strong>
+                <div class="panel panel-default" id="center">
+                    <div class="panel-heading"><strong>
                             <h1>Eat Da Burger!!</h1>
                         </strong>
                     </div>
@@ -46,14 +46,15 @@
                             <button type="submit" class="btn btn-success" id="addburger">
                                 <span class="fa fa-thumbs-up"></span>
                             </button>
-                            <p><strong> Enter the Burger you would like to eat and Click the "Button"</strong></p>
+                            <p><strong id="strong_1"> Enter the Burger you would like to eat </br> Click the
+                                    "Button"</strong></p>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading" id="rightside"><strong>Devoured Burgers</strong>
+                <div class="panel panel-default" id="rightside">
+                    <div class="panel-heading"><strong>Devoured Burgers</strong>
                         <p>Remove Devoured Burgers</p>
                     </div>
                     <div class="panel-body">

@@ -30,38 +30,42 @@ body {
 } */
 
 
-
-.jumbotron {
-    /* background-image: url("../images/burgerpic2.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    background-color: none;
-    /* color: #ffffff; */
-    /* margin-top: 3%; */
-    text-align: center;
-}
-
 #newburger {
     color: #5c5c5c;
 }
 
-#leftside {
-    background-color: #5c5c5c;
-    color: white;
-    text-align: center;
-    font-size: 1.3em;
-}
-
 #center {
-    background-color: #e49322;
+    background-color: #d39c4fdc;
     color: white;
     text-align: center;
     font-size: 1.3em;
+    opacity: .75;
+    border-radius: 6px;
+    margin-top: 20px;
 }
 
+#strong_1 {
+    color: black;
+    font-size: 100%
+}
+
+#leftside,
 #rightside {
-    background-color: #5c5c5c;
+    background-color: #5c5c5c88;
     color: white;
     text-align: center;
     font-size: 1.3em;
+    opacity: .75;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.input-form:focus {
+    width: 100%;
+    padding: 6px 10px;
+    color: black;
+    font-size: 25px;
+    border: 2px solid rgb(9, 27, 192);
+    border-radius: 12px;
+    /* box-sizing: border-box; */
 }
