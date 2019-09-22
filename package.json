@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    <<
+    << << < HEAD "watch": "nodemon server.js" ===
+      === =
+      "dev": "nodemon server.js" >>>
+      >>> > 86 a48a3ec8071bfc89e210caf7834a607e7aea38
   },
   "repository": {
     "type": "git",
