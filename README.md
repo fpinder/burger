@@ -10,11 +10,11 @@
 
 <a href="#"><img src="https://github.com/fpinder/burger/blob/master/public/assets/images/eat_the_burger_Readme.JPG" alt="Home Page"></a>
 
-*The application also has an error checking process before the page is submitted to ensure that the user has entered a burger name to prevent empty fields in the database*
+*The application also has an error checking process `(express-validator)` before the page is submitted to ensure that the user has entered a burger name to prevent empty fields in the database*
 
 `Error Checking`
 
-<a href="#"><img src="https://github.com/fpinder/FriendFinder/blob/master/app/public/images/erroChecking.jpg" alt="error checking"></a>
+<a href="#"><img src="#" alt="error checking"></a>
 
 **The application Burger is organized with the following structure:** 
 
@@ -60,7 +60,7 @@ Burger
 
 **_Technology used_**
 
-*This app uses JavaScript, Node.js, Mysql and 5 NPM packages: Express, Express-handlebars,  Body-parser, dotenv and Nodemon*
+*This app uses JavaScript, Node.js, Mysql and 5 NPM packages: Express, Express-handlebars, express-validato, Body-parser, dotenv and Nodemon*
 
  Files Used   |  Role in the App                                                                  |
 | ------------ | -------------------------------------------------------------------------------------- |
@@ -72,7 +72,8 @@ Burger
 | Dotenv  |Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. | 
 | Express | A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.  |
 | Express-handlebars | Handlebars provides the power necessary to let you build semantic templates effectively with no frustration.  |
-| Nodemon | nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.  |
+| Nodemon | nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected. | 
+| express-validator | Express middleware for the validator module. |
 
 **Config Setup:** *`connection.js` setup the code to connect Node to MySQL. `orm.js` methods that will execute the necessary MySQL commands in the controllers. These methods will be used to retrieve and store data in your database* 
 
@@ -82,9 +83,7 @@ Burger
 
 **View Setup:** *`index.handlebars` file used by Handlebars and `index.handlebars` to have the template that Handlebars can render onto* 
 
-**DB Setup** *The application's data is stored in MySql via the `schema.sql.` and `seeds.sql`* 
-
-#Data excerpts
+**DB Setup/excerpts** *The application's data is stored in MySql via the `schema.sql.` and `seeds.sql`* 
 
 **Schema.sql**
  ```

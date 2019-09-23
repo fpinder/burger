@@ -24,12 +24,6 @@ body {
 
 }
 
-/* .container {
-    width: 960;
-    margin: 0px, auto;
-} */
-
-
 #newburger {
     color: #5c5c5c;
 }
@@ -60,12 +54,29 @@ body {
     margin-top: 20px;
 }
 
-.input-form:focus {
-    width: 100%;
+input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    background-color: white;
+    background-image: url('https://img.icons8.com/nolan/64/000000/search.png');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    padding: 6px 6px;
+
+}
+
+input[type=text]:focus {
+    width: 60%;
     padding: 6px 10px;
     color: black;
     font-size: 25px;
     border: 2px solid rgb(9, 27, 192);
     border-radius: 12px;
+    text-align: center;
+    background-position: 10px 10px;
     /* box-sizing: border-box; */
 }
