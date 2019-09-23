@@ -15,12 +15,6 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return res.status(422).json({
-            errors: errors.array()
-        });
-    }
     burger.insertOne(
         ["burger_name", "devoured"],
         [req.body.burger_name, req.body.devoured],
